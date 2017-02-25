@@ -21,4 +21,7 @@ year.textContent = yr;
 document.body.onload = function (){
 	var resume = document.getElementsByClassName('resume')[0];
 	resume.classList.add('horizTranslate');
+	resume.classList.add('end');
+	var dateComp = document.getElementsByClassName('dateComp')[0];
+	dateComp.classList.add('end');
 }

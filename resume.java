@@ -44,16 +44,32 @@ public class vtkrishn{
 	/*
 	*	Enployment History
 	*/
-	public List<String> getHistory(){
-		List<String> history = new ArrayList<String>();		
+	public Map<String,StringBuffer> getHistory(boolean onlyRecent){
+		Map<String,StringBuffer> history = new HashMap<String,StringBuffer>();
+		StringBuffer description = new StringBuffer();		
+		String company;
 
-		history.add("Oracle America");
-		history.add("Sunera Technologies");
-		history.add("Capgemini India");
-		history.add("Oracle India");
-		history.add("Caritor India");
-
+		if(onlyRecent){
+			company = "Oracle America";
+			description.append("Edit Splits – Time Split generation for different dimensions [Account, Geography, Products]");
+			description.append("•	Conception and development of new algorithm to split Business Objectives for CRM Sales Application");
+			description.append("•	Design responsive UI for seamless user interaction");
+			description.append("Advanced Search - Support free form searching for Sales Objects");
+			description.append("•	Develop efficient criteria tracking involving string and pattern matching");
+			description.append("•	Involved in SQL query tuning exercise along with UI and backend logic in Java");
+			description.append("•	Improved response time by 20 sec by identifying performance alternatives");
+			description.append("Translation API – External API support to identify object assignment");
+			description.append("•	Redesigned existing logic by reducing the iteration using efficient data structures");
+			description.append("•	Improved performance by 10%");
+			
+			history.put(company,description);
+		}
+		else{
+			history = getAllJobHistory();
+		}
+		
 		return history;
+		}
 	}
 	
 	/*
@@ -68,4 +84,11 @@ public class vtkrishn{
 		return social;
 	}
 	
+	/*
+	* Sponsorship
+	*/
+	public boolean isSponsorShipNeeded(){
+		return true;
+	}
+
 }
