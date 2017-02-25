@@ -1,4 +1,4 @@
-h1{
+body{
 	margin-left: 20px;
 }
 
@@ -6,10 +6,16 @@ h1{
 	
 }
 
-#days{
+#day{
 	
 }
 
-#months{
-	s
+#month{
+	
+}
+#year{
+	
+}
+#dateComponent{
+	display: inline-flex;
 }
