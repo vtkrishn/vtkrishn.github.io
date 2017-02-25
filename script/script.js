@@ -18,3 +18,7 @@ day.textContent = today;
 month.textContent = mon;
 year.textContent = yr;
 
+document.body.onload = function (){
+	var resume = document.getElementsByClassName('resume')[0];
+	resume.classList.add('horizTranslate');
+}

@@ -40,3 +40,16 @@ padding: 10px;
 border-color: rgba(25, 192, 237,.2);
 	
 }
+
+.resume{
+	margin-left: -1000px
+}
+
+.resume.horizTranslate {
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  margin-left: 0px !important;
+}
