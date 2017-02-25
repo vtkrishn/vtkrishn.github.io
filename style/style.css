@@ -52,7 +52,6 @@ border-color: rgba(25, 192, 237,.2);
   -o-transition: 3s;
   transition: 3s;
   margin-left: 0px !important;
-  margin-top : -80px;
 }
 
 .dateComp{
@@ -62,5 +61,5 @@ border-color: rgba(25, 192, 237,.2);
 
 .dateComp.end{
 	transition: all 1s ease-in-out;
-	opacity: 0;
+	opacity: 1;
 }
