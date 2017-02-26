@@ -3,6 +3,7 @@
 <head>
 	<!-- Meta tags -->
 	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Vinod Krishnan">
 	<meta name="keywords" content="HTML, CSS, Javascript">
@@ -13,6 +14,15 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/fav/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+	
+	<!--fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Titillium+Web" rel="stylesheet"> 
+
      <!-- styles  -->
      <link rel="stylesheet" href="style/style.css">
 
@@ -22,9 +32,26 @@
      </script>
 </head>
 <body>
-<div>
-<!--<center><h1>Vinod Krishnan</h1>-->
+<nav>
+	<div class="container">
+		<a href="http://vtkrishn.github.io" target="_blank">
+			<img src="img/logo.png" alt="Vinod Krishnan Logo" class="logo">
+		</a>
+	<ul>
+		<a href="#resume" target="_self" onclick="resumeScroll()"><li>Resume</li></a>
+		<a href="http://vtkrishn.com" target="_blank"><li>Blog</li></a>
+	</ul>
+	</div>
+</nav>
 <center>
+ <div class="header">
+    <div class="image">
+      <img src="img/vectorpaint.svg" alt="" class="icon">
+    </div>
+  </div>
+
+<div>
+
 <div id="dateComponent" class="dateComp"><div id="date"></div> <div id="day"></div> <div id="month"></div> <div id="year"></div> </div>
 </center>
 <br/>
@@ -33,6 +60,7 @@
 <center><img src="img/resume.png"></center>
 </div>
 <canvas width="500" height="500" class="canvas"></canvas>
+
 <!-- Footer Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

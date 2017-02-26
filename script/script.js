@@ -25,3 +25,8 @@ document.body.onload = function (){
 	var dateComp = document.getElementsByClassName('dateComp')[0];
 	dateComp.classList.add('end');
 }
+
+var resumeScroll = function (){
+var res = document.getElementsByClassName('resume')[0]; 
+res.scrollIntoView({block: "start", behavior: "smooth"});
+}
