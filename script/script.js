@@ -19,9 +19,6 @@ month.textContent = mon;
 year.textContent = yr;
 
 document.body.onload = function (){
-	var resume = document.getElementsByClassName('resume')[0];
-	resume.classList.add('horizTranslate');
-	resume.classList.add('end');
 	var dateComp = document.getElementsByClassName('dateComp')[0];
 	dateComp.classList.add('end');
 }
@@ -29,4 +26,8 @@ document.body.onload = function (){
 var resumeScroll = function (){
 var res = document.getElementsByClassName('resume')[0]; 
 res.scrollIntoView({block: "start", behavior: "smooth"});
+//window.scrollTo(0,800);
+var resume = document.getElementsByClassName('resume')[0];
+	resume.classList.add('horizTranslate');
+	resume.classList.add('end');
 }
