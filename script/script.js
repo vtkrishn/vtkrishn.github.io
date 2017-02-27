@@ -31,3 +31,7 @@ var resume = document.getElementsByClassName('resume')[0];
 	resume.classList.add('horizTranslate');
 	resume.classList.add('end');
 }
+
+function tempCtrl($scope){
+	$scope.value = 17;
+}
