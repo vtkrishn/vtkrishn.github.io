@@ -24,12 +24,9 @@ document.body.onload = function (){
 }
 
 var resumeScroll = function (){
-var res = document.getElementsByClassName('resume')[0]; 
-res.scrollIntoView({block: "start", behavior: "smooth"});
-//window.scrollTo(0,800);
 var resume = document.getElementsByClassName('resume')[0];
+resume.scrollIntoView({block: "start", behavior: "smooth"});
 	resume.classList.add('horizTranslate');
-	resume.classList.add('end');
 }
 
 function tempCtrl($scope){
