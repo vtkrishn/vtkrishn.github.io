@@ -1,3 +1,7 @@
+$(window).load(function() {
+    $("#overlay").delay(1000).fadeOut();
+});
+
 var now = new Date();
 
 var date = document.getElementById('date');
