@@ -1,5 +1,5 @@
 $(window).load(function() {
-    $("#overlay").delay(1000).fadeOut();
+    $("#overlay").delay(2000).fadeOut();
 });
 
 var now = new Date();

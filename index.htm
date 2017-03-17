@@ -5,12 +5,13 @@
 <head>
 	<!-- Meta tags -->
 	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Vinod Krishnan">
+	<meta name="author" content="Vinod Krishnan, Fremont,California">
+  <meta name="description" content="Vinod Krishnan is a software engineer working for Oracle">
 	<meta name="keywords" content="HTML, CSS, Javascript">
 
-    <title>Vinod Krishnan</title>
+    <title>Vinod Krishnan | A Polyglot Engineer</title>
 
     <!-- external style links  -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,6 +25,7 @@
 
 	<!--fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
      <!-- styles  -->
      <link rel="stylesheet" href="style/style.css">
@@ -34,39 +36,119 @@
      </script>
 </head>
 <body>
-<div>
+<!-- loading -->
+<div id="overlay">
+<img src="img/logo.png" class="load_image">
+    <div class="loader">
+      <div></div>
+    </div>
+</div>
+<!-- page top -->
+<div class="top">
+<!-- page header -->
+<header id="header" class="title">
+<!-- page header logo-->
+<a id="logo" href="#top"></a>
+  <!--menu -->
+  <ul class="navigation">
+     <li class="top">
+      <a href="#top_section">
+      <b>Top</b>
+      </a>
+     </li>
+     <li class="skills">
+       <a href="#skill_section">
+       <b>Skills</b>
+       </a>
+     </li>
+     <li class="summary">
+       <a href="#summary_section">
+       <b>Summary</b>
+       </a>
+     </li>
+     <li class="projects">
+       <a href="#project_section">
+       <b>Projects</b>
+       </a>
+     </li>
+     <li class="resume">
+       <a href="#resume">
+       <b>Resume</b>
+       </a>
+     </li>
+  </ul>
+</a>
+</header>
+<section>
+  <!--center of the page -->
+  <div class="sectional">
+     <!-- name -->
+    <div class="top_section">
+      <span>Vinod Krishnan</span>
+    </div>
+  <div class="objective1">
+   <span>
+     Experienced engineer with over 10 years of expertise in java and enterprise application development looking for a convincing position to push the limits and explore more challenges in the open source development
+   </span>
+  </div>
+<!-- skills -->
+  <div class="skill_section">
+    <span>Skills</span>
+  </div>
+<div class="objective2">
+ <span>
+	 <pre>
+Languages: Java, JavaScript, C++
+Frameworks: J2EE, REST Web Services, Hibernate
+Environment: Linux
+Database: SQL, PL/SQL
+Source control: GIT, SVN
+Concepts: OOPs, Design Patterns, MVC, JVM, Concurrency, Garbage Collection
+<div class="self-learnt">
+	<span>
+	Python, Ruby, Angular, MongoDB, Hadoop
+	 </span>
+</div>
+</pre>
+ </span>
+
 
 </div>
+<!-- summary -->
+  <div class="summary_section">
+    <span>Summary</span>
+  </div>
+<div class="Company">
+Oracle
+</div>
+<!-- projects -->
+  <div class="project_section">
+    <span>Projects</span>
+  </div>
+<div class="objective5">
+ <span>
+<pre>
+Edit Splits – Designed the Time Split generation for different dimensions [Account, Geography, Products]
+ Conception and development of new algorithm to split Business Objectives for CRM Sales Application
+ Developed responsive UI for seamless user interactions
+ Exposed REST API services for the edit splits CRUD operations
 
-<nav>
-	<div class="container">
-		<a href="http://vtkrishn.github.io" target="_blank">
-			<img src="img/logo.png" alt="Vinod Krishnan Logo" class="logo">
-		</a>
-	<ul>
-		<a href="#resume" target="_self" onclick="resumeScroll()"><li>Resume</li></a>
-		<a href="#blog" target="_blank"><li>Blog</li></a>
-	</ul>
-	</div>
-</nav>
-<center>
- <div class="header">
-    <div class="image">
-      <img src="img/vectorpaint.svg" alt="" class="icon">
-    </div>
+Advanced Search - Support free form searching for Sales Objects
+ Developed an efficient criteria tracking involving strings and pattern matching
+ Involved in SQL query tuning exercise along with UI and backend logic in Java
+ Improved response time by 20 sec by identifying performance alternatives
+
+Translation API – External API support to identify object assignments based on territory
+ Redesigned existing logic by reducing the iteration using alternative efficient data structure
+ Improved performance by 10%
+</pre>
+ </span>
+</div>
   </div>
 
+</section>
 
 <div>
-
-<div id="dateComponent" class="dateComp"><div id="date"></div> <div id="day"></div> <div id="month"></div> <div id="year"></div> </div>
-</center>
-<br/>
-</div>
-<div class="resume">
-<center><img src="img/resume.png"></center>
-</div>
-<canvas width="500" height="500" class="canvas"></canvas>
 
 <!-- Footer Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>

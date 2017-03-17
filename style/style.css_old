@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+body{
+	height: 100%;
+  width: 100%;
+  color: #333333;
+  font-size: 100%;
+  background: #ffffff;
+  font-weight: 300;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#date{
+	padding: 10px 20px;
+	border-color: rgb(25, 192, 237);
+	border-style: solid;
+	border-width: 1px;
+	margin-right: 10px;
+
+}
+
+#day{
+	padding: 10px 20px;
+	border-color: rgb(25, 192, 237);
+	border-style: solid;
+	border-width: 1px;
+	margin-right: 10px;
+}
+
+#month{
+	padding: 10px 20px;
+	border-color: rgb(25, 192, 237);
+	border-style: solid;
+	border-width: 1px;
+	margin-right: 10px;
+}
+#year{
+	padding: 10px 20px;
+	border-color: rgb(25, 192, 237);
+	border-style: solid;
+	border-width: 1px;
+}
+#dateComponent{
+	display: inline-flex;
+	color: rgb(25, 192, 237);
+border: 1px solid;
+padding: 10px;
+border-color: rgba(25, 192, 237,.2);
+margin-left : -31px;
+	
+}
+
+.resume{
+	margin-left: -700px;
+}
+
+.resume.horizTranslate {
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+  margin-left: 0px !important;
+}
+
+.dateComp{
+	transition: all 3s ease-in-out;
+	opacity: 1;
+}
+
+.dateComp.end{
+	transition: all 1s ease-in-out;
+	opacity: 1;
+}
+
+
+nav{
+	position: absolute;
+	top: 24px;
+  width: 100%;
+  height: 80px;
+}
+
+nav .container a{
+display: inline-block;
+}
+
+nav .logo {
+    height: 56px;
+    margin: 12px 0px; }
+
+    nav ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 2px; }
+
+    nav ul a {
+      color: #169CEE;
+      text-decoration: none;
+      float: left;
+      margin-left: 32px; }
+
+      nav ul li {
+      	font-family: 'Titillium Web', sans-serif;
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      color: #169CEE;
+      font-size: 16px;
+      cursor: pointer;
+      letter-spacing: 0.3px; }
+
+      .header{
+
+      }
+
+      .heroText{
+
+      }
+
+      .icon{
+      	width: 1000px;
+      	height: 900px;
+
+      	margin-top: -75px;
+
+      }
+      
+.search{
+ width: 300px;
+height: 40px;
+position: absolute;
+font-family: 'Titillium Web', sans-serif;
+color: #169CEE;
+      font-size: 16px;
+}
