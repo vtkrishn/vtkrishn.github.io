@@ -1,0 +1,11 @@
+git clone https://github.com/vtkrishn/vtkrishn.github.io.git
+   21  git push
+   22  vi ~/.gitconfig
+   23  git config --global user.name "Vinod Krishnan"
+   24  git config --global user.email "vtkrishn@gmail.com"
+   25  vi ~/.gitconfig
+   26  git push
+   27  git config --global push.default matching
+   28  git config --global push.default simple
+   29  git push
+   30  git config credential.helper store
