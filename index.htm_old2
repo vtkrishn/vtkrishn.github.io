@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<!-- Vinod Krishnan -->
+<!-- vtkrishn@gmail.com -->
+<!-- vin.sinin@gmail.com -->
+<html lang="en">
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Vinod Krishnan, Fremont,California">
+  <meta name="description" content="Vinod Krishnan is a software engineer working for Oracle">
+	<meta name="keywords" content="HTML, CSS, Javascript">
+
+    <title>Vinod Krishnan | A Polyglot Engineer</title>
+
+    <!-- external style links  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/fav/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+
+	<!--fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> <!-- font-family: 'Gloria Hallelujah', cursive; -->
+	<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Peddana|Reenie+Beanie|Snippet|Text+Me+One" rel="stylesheet">
+<!--
+    font-family: 'Reenie Beanie', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-family: 'Text Me One', sans-serif;
+    font-family: 'Peddana', serif;
+    font-family: 'Snippet', sans-serif;
+-->
+     <!-- styles  -->
+     <link rel="stylesheet" href="style/style.css">
+
+     <script type="text/javascript">
+     //dummy testing placeholder
+
+     </script>
+</head>
+<body>
+<!-- loading -->
+<div id="overlay">
+<img src="img/logo.png" class="load_image">
+    <div class="loader">
+      <div></div>
+    </div>
+</div>
+<!-- page top -->
+<div class="top">
+<!-- page header -->
+<header id="header" class="title">
+<!-- page header logo-->
+<a id="logo" href="#top"></a>
+  <!--menu -->
+  <ul class="navigation">
+     <li class="top">
+      <a href="#top_section">
+      <b>Top</b>
+      </a>
+     </li>
+     <li class="skills">
+       <a href="#skill_section">
+       <b>Skills</b>
+       </a>
+     </li>
+     <li class="work">
+       <a href="#work_section" target="_self">
+       <b>Work</b>
+       </a>
+     </li>
+     <li class="projects">
+       <a href="#project_section">
+       <b>Projects</b>
+       </a>
+     </li>
+     <li class="resume">
+       <a href="#resume">
+       <b>Resume</b>
+       </a>
+     </li>
+  </ul>
+</a>
+</header>
+
+<!-- section starts -->
+<section>
+<!-- side navigation -->
+	<div class="sideNavigation">
+
+	</div>
+
+  <!--home page -->
+  <div class="sectional">
+     <!-- name -->
+    <div class="top_section">
+      <img src="img/logo.png" class="logo_section">
+			<span>Vinod Krishnan</span>
+    </div>
+<!-- social -->
+		<div class="social">
+			<div class="github">
+			<img src="">
+			</div>
+			<div class="linkedin">
+	<img src="">
+			</div>
+			<div class="stack">
+	<img src="">
+			</div>
+			<div class="facebook">
+	     <img src="">
+			</div>
+		</div>
+
+<div class="navigate">
+<img src="">
+</div>
+  <div class="top_content">
+   <span>
+     Experienced engineer with over 10 years of expertise in java and enterprise application development looking for a convincing position to push the limits and explore more challenges in the open source development
+   </span>
+  </div>
+<!-- skills -->
+  <div class="skill_section">
+    <span>Skills</span>
+  </div>
+<div class="skill_content">
+ <span>
+Languages: Java, JavaScript, C++ <br/>
+Frameworks: J2EE, REST Web Services, Hibernate <br/>
+Environment: Linux <br/>
+Database: SQL, PL/SQL <br/>
+Source control: GIT, SVN <br/>
+Concepts: OOPs, Design Patterns, MVC, JVM, Concurrency, Garbage Collection <br/>
+<div class="self-learnt">
+	<span>
+	Python, Ruby, Angular, MongoDB, Hadoop
+	 </span>
+</div>
+ </span>
+</div>
+<!-- work -->
+  <div class="work_section">
+    <span>Work</span>
+		<!-- projects -->
+		  <div class="project_section">
+		    <span>Projects</span>
+		  </div>
+	</div>
+	<!--Oracle -->
+	<div class="Company">
+	<span>Oracle</span>
+	<div class="company_content">
+	 <span>
+	Edit Splits – Designed the Time Split generation for different dimensions [Account, Geography, Products] <br/>
+	 Conception and development of new algorithm to split Business Objectives for CRM Sales Application <br/>
+	 Developed responsive UI for seamless user interactions <br/>
+	 Exposed REST API services for the edit splits CRUD operations <br/>
+	<br/>
+	Advanced Search - Support free form searching for Sales Objects <br/>
+	 Developed an efficient criteria tracking involving strings and pattern matching <br/>
+	 Involved in SQL query tuning exercise along with UI and backend logic in Java <br/>
+	 Improved response time by 20 sec by identifying performance alternatives <br/>
+	<br/>
+	Translation API – External API support to identify object assignments based on territory <br/>
+	 Redesigned existing logic by reducing the iteration using alternative efficient data structure <br/>
+	 Improved performance by 10% <br/>
+	 </span>
+	</div>
+	</div>
+<!--Sunera Technologies -->
+	<div class="Company">
+	<span>Sunera Technologies (Hub Group)</span>
+	<div class="company_content">
+	 <span>
+		 Pickup Scheduling Algorithm -Involved in designing some of the algorithms in the load pickup scheduling algorithm like <br/>
+	  Window Selection, location sorting, load time evaluation, slot reservation &free slots calculation, <br/>
+	 Trucks in transit, distance to load <br/>
+	  Foresaw concurrency issues and implemented efficient lock mechanism <br/>
+	 Interactive Cost Calculator - Live map in Hub group website to gauge the transportation cost <br/>
+	  Used JavaScript, Jersey, Google Directions API for interactions <br/>
+	 Hub Services - Service to check the status of the load for the truck drivers and calculate the minimum wait time <br/>
+	  Involved in identifying the Geo locations of the Hub and the truck <br/>
+	  Implemented REST service operations involving Current Status, Queue Size, Reservation, estimated load time <br/>
+	 </span>
+	</div>
+	</div>
+
+	<!--Capgemini -->
+		<div class="Company">
+		<span>Capgemini India</span>
+		<div class="company_content">
+		 <span>
+			 Portal Performance – Involved in the designing of the home page for the Nevada Business Portal for the Secretary of state <br/>
+ Increased the performance of the landing page by decreasing the load time by 5% <br/>
+ Evaluated user footprints using a tool to fulfill user experience and increase traffic <br/>
+		 </span>
+		</div>
+		</div>
+
+		<!--Oracle India -->
+			<div class="Company">
+			<span>Oracle India</span>
+			<div class="company_content">
+			 <span>
+				 Currency Module - End to end development of currency modules like Daily rates, Historical Rates and Conversion Types <br/>
+ Exposed key operations for web service access using Java API <br/>
+ Wrote some of the key procedures in PL/SQL <br/>
+Reporting dash board - Developed a standalone reporting dashboard to track project status and summary <br/>
+ Implemented in JavaScript using open source charts for the UI and java to process project data <br/>
+			 </span>
+			</div>
+			</div>
+
+
+<!--end -->
+  </div>
+
+</section>
+
+<div>
+
+<!-- Footer Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="script/script.js"></script>
+</body>
+</html>
