@@ -5,7 +5,9 @@
 <script>
 function pushClick() {
   var pushValue = document.getElementById("pushtext");
+  var pushLine = document.getElementById('pushSpan');
     if(!isEmpty(pushValue.value)){
+		pushLine.style.cssText='background-color: wheat;';
         var stackElement = document.getElementById("stack");
         var iDiv = document.createElement('div');
         if(stackElement.children.length == 0)
@@ -71,7 +73,7 @@ this.elements = [];
 };
 
 Stack.prototype.push = function(element){
-this.data.push(element);
+<span id="pushSpan" style="background-color: white;-webkit-transition: background-color 2s ease-out;  -moz-transition: background-color 2s ease-out;  -o-transition: background-color 2s ease-out;  transition: background-color 2s ease-out;">this.data.push(element);</span>
 }
 
 Stack.prototype.pop = function(){
