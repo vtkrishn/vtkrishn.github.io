@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+#add{
+  background: url("https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e132110b-210x210.png") no-repeat left;
+  background-size: 25px;
+  background: width: 35px;
+  width : 25px;
+  height : 35px;
+  border: none;
+}
+
+#remove{
+  background: url("http://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e215138d.png") no-repeat left;
+  background-size: 25px;
+  background: width: 30px;
+  width : 25px;
+  height : 35px;
+  border: none;
+}
+
+input[type="text"]{
+  font-family: "Merriweather", serif;
+  color: #b2b4b4;
+  width: 80%;
+  padding: 10px;
+  margin -left : 20px;
+border: solid 1px gainsboro;
+-webkit-transition: box-shadow 0.3s, border 0.3s;
+-moz-transition: box-shadow 0.3s, border 0.3s;
+-o-transition: box-shadow 0.3s, border 0.3s;
+transition: box-shadow 0.3s, border 0.3s;
+}
