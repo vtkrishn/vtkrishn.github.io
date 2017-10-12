@@ -1,101 +1,66 @@
-(function(exports){
+var buttonClick = function(event){
+    var value = document.getElementById('item').value;
+    if(value){
+        addItemTodo(value);
+    }
+}
 
-console.clear();
-sessionStorage.setItem('index', 1);
+var checkClick = function(){
+    var item = this.parentNode;
+    document.getElementById('completed').prepend(item);
+}
 
-  var container = document.createElement("div");
-  var textStack = document.createElement("div");
-  var addElement = document.createElement("input");
-  //var removeElement = document.createElement("input");
-  var brk = document.createElement("br");
+var deleteClick = function(){
+    var item = this.parentNode;
+    var parent = item.parentNode;
+    parent.removeChild(item);
+}
 
-  addElement.setAttribute("type","button");
-  addElement.setAttribute("id","add");
-//   removeElement.setAttribute("type","button");
-//   removeElement.setAttribute("id","remove");
-//   removeElement.disabled=true;
-//   removeElement.style="opacity:0.2;";
+var addItemTodo = function(value){
+    var list = document.createElement("li");
+        list.innerHTML = value;
+        addButtons(list);
+        
+        document.getElementById('list').prepend(list);
+        document.getElementById('item').value = null;
+}
 
-  container.style = "display:block;margin-left:"+parseInt(window.innerWidth/2)+"px;";
-  container.appendChild(addElement);
-  //container.appendChild(removeElement);
-  document.body.appendChild(container);
-  document.body.appendChild(brk);
-  document.body.appendChild(textStack);
-  document.body.appendChild(brk);
-
-var add = document.getElementById("add");
-//var remove = document.getElementById("remove");
-
-add.addEventListener('click',function(){
-  var index = parseInt(sessionStorage.getItem('index'));
-  var textElem = document.getElementById("txt"+index);
-
-  if(textElem === null || textElem.value !== ""){
-      var newText = document.createElement("input");
-      var textDel = document.createElement("div");
-      var textContainer = document.createElement("div");
-
-    newText.setAttribute("type","text");
-    var id = parseInt(sessionStorage.getItem('index')) + 1;
-    sessionStorage.setItem('index', id);
-
-    newText.setAttribute("id","txt"+id);
-    textDel.setAttribute("id","textDel"+id);
-    var marker = document.createElement("input");
-     marker.setAttribute("type","button");
-    marker.setAttribute("id","marker"+id);
-    marker.style = "margin-left : 2px;background: url('http://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e215138d.png') no-repeat left;border :none;background-size: 10px;background: width: 10px;display:none;";
-    marker.addEventListener('click',function(){
-      var val = newText.id;
-     var delId = val.substring(val.length-1);
-      var storageId = sessionStorage.getItem('index');
-      sessionStorage.setItem('index', storageId-1);
-      textStack.removeChild(document.getElementById("textContainer"+delId));
-    });
-
-    textDel.appendChild(marker);
-    textContainer.setAttribute("id","textContainer"+id);
-
-  newText.addEventListener('blur',function(){
-       if(newText.value !== ""){
-        newText.style = "border: none;background-color: #d8d9d9;color : #898a8b;border: solid 1px #898a8b;text-align: right;font-style: italic;";
-        textContainer.style = "";
-         marker.style = "margin-left : 2px;background: url('http://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e215138d.png') no-repeat left;border :none;background-size: 10px;background: width: 10px;display:none;"
-       }
-    });
-  newText.addEventListener('focus',function(){
-    newText.style = "background-color: white;";
-    textContainer.style = "border: solid 1px #f2917a;background-color:#efd0c8;";
-    marker.style = "margin-left : 2px;background: url('http://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e215138d.png') no-repeat left;border :none;background-size: 10px;background: width: 10px;display:visible;"
-    //marker.style ="background-color: #f43c10;position: absolute;height:5px;width : 5px;";
-    });
-
-  textDel.appendChild(newText);
-  textContainer.appendChild(textDel);
-  textStack.appendChild(textContainer);
-  //removeElement.disabled=false;
-  //removeElement.style="opacity:1;";
-  }
-});
+var addButtons = function(list){
+    var del = document.createElement('button');
+    var complete = document.createElement('button');
+    del.classList.add('remove')
+    del.setAttribute("id","delete");
+    
+    complete.classList.add('complete')
+    complete.setAttribute("id","check");
+    
+    del.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path class="fill" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>';
+    
+    complete.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path class="fill" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/></svg>';
+    
+    complete.addEventListener('click',checkClick);
+    del.addEventListener('click',deleteClick);
+    
+    list.appendChild(complete);
+    list.appendChild(del);
+}
 
 
+document.getElementById('add').addEventListener('click',buttonClick);
 
-// remove.addEventListener('click',function(){
-//   var id = parseInt(sessionStorage.getItem('index'));
-//   var textContainer = document.getElementById("textContainer"+id);
-//   if(id > 1){
-//     sessionStorage.setItem('index', id-1);
-//     textStack.removeChild(textContainer);
-
-//     removeElement.disabled=false;
-//     removeElement.style="opacity:1;";
-//   }
-
-//   if(id === 2){
-//     removeElement.disabled=true;
-//     removeElement.style="opacity:0.2;";
-//     sessionStorage.setItem('index', 1);
-//   }
-// });
-})(this);
+//(function(exports){
+//    'use strict';
+//    
+//    var $ = (function(tagName){
+//      
+//      return function(tagName){
+//        console.log(tagName);
+//      }
+//    }()); 
+//  
+//    console.clear()
+//    //console.log('vinod');
+//    
+//  exports.$ = $;
+//  
+//})(typeof window === 'undefined' ? module.exports : window)
