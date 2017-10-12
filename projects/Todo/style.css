@@ -21,7 +21,7 @@ div.box{
 
 header{
 	width : 370px;
-    height : 85px;
+    height : 70px;
     padding : 15px;
     top : 0;
 	left : 0;
@@ -103,7 +103,7 @@ header button .fill{
     position: fixed;
     top: 100px;
     margin: 0 0 10px 0;
-    height: 64%;
+    height: 48%;
 }
 
 div.spacer{
