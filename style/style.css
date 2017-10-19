@@ -314,11 +314,15 @@ animation: fadeIn 1s ease-in both;
 
 
 @media only screen and (max-width: 768px) {
-    .divider1{top: 20px;}
-     .divider2{left: 100px;top: 250px;} 
-     .divider3{left: 100px;top: 485px;} 
-    .divider4{display: none}
+    section{
+    margin-top: 260px;
+}
+    .divider1{position: absolute;top: 10px;}
+     .divider2{left: 100px;position: absolute;top: 250px} 
+     .divider3{left: 100px;position: fixed;top: 480px} 
+    .divider4{position: absolute;top: 10px}
     .navigator{
+    left: 0;
     text-align: right;
     float: right;
     display: block;
@@ -341,5 +345,16 @@ a[ id= "sect3" ]:target ~ #main article.panel {
 }
 a[ id= "sect4" ]:target ~ #main article.panel {
     transform: translateY( -3770px );
+}
+    
+    @keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 }
