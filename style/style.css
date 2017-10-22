@@ -454,6 +454,11 @@ a[ id= "sect4" ]:target ~ #main article.panel {
 
 .projectContainer{
     height : 1000px;
-    overflow-y: scroll;
+/*    overflow-y: scroll;*/
     min-height: 450px;
+}
+
+.skillbox{
+    color: rgba(90,190,153,1); 
+    padding : 1px;
 }
