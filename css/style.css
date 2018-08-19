@@ -2,8 +2,8 @@ body{
    margin-left: 10%;
    margin-top:5%;
    background-color: white;
-   background-image: url('../i1.png');
-   background-size: 60%;
+   background-image: url('../i2.png');
+   background-size: 100%;
    background-position: center;
    background-repeat: no-repeat;
    }
@@ -11,13 +11,13 @@ body{
 .title{
     font-family : 'Arial';
     font-size : 35px;
-    color  : #615858
+    color  : #817d7d;
 }
 
 .subtitle{
     font-family : 'Arial';
     font-size : 20px;
-    color  : #cac3c3;
+    color  : #817d7d;
     margin-left:10px;
 }
 
@@ -25,7 +25,7 @@ body{
     font-family : 'Arial';
     display: inline-block;
     font-size : 20px;
-    color  : #cac3c3;
+    color  : #817d7d;
     padding : 10px 20px 10px 10px;
 }
 
@@ -34,10 +34,10 @@ body{
     margin-right: 20%;
     font-family : 'Arial';
     font-size : 20px;
-    color  : #cac3c3
+    color  : #817d7d;
 }
 
 a:link {
     /*text-decoration: none;*/
-    color  : #cac3c3;
+    color  : #817d7d;
 }
